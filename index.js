@@ -7,7 +7,7 @@ nextImg.addEventListener("click", function(){
     prevArticle.style.display = "none"
     nextArticle.style.display = "block"
     nextArticle.style.display = "flex"
-    nextArticle.style.flexDirection ="row"
+    nextArticle.style.flexDirection ="row" 
 })
 
 previousImg.addEventListener("click", function(){
