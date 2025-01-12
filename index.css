@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Inter-Regular.woff";
+    src: url("./Inter-Regular.woff");
+}
+@font-face {
+    font-family: "Inter-Bold.woff";
+    src: url("./Inter-Bold.woff");
+}
+:root{
+    --darkblue: #202046;
+    --grayBlue: #babacf;
+    --font: "Inter-Regular.woff";
+    --fontB: "Inter-Bold.woff";
+}
+body{
+    margin: auto;
+    display: flex;
+    place-self: center;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-family: var(--font);
+    font-size: 18px;
+    width: 380px;
+    line-height: 30px;
+}
+h4{
+    font-family: var(--fontB);
+    font-size: 14px;
+}
+section{
+    position: relative;
+    left: 60px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    justify-content: center;
+    /* align-items: center; */
+}
+.deets{
+    color: var(--grayBlue);
+    border-left: 2px solid var(--darkblue);
+    padding-left: 5px;
+}
+.img-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    width: 350px;
+    height: 380px;
+    /* background-color: purple;
+    opacity: 0.9; */
+    justify-content: center;
+    /* align-items: center; */
+}
+.profile{
+    width: 300px;
+    height: 330px;
+}
+.name{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.nav{
+    margin-top: -20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    border-radius: 12px;
+}
+.nav img{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.nav-active{
+    background-color: white;
+    opacity: 0;
+}
+.next-article{
+    display: none;
+}
