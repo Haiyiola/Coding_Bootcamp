@@ -1,7 +1,7 @@
-let previousImg = document.getElementById("prev")
-let nextImg = document.getElementById("next")
-let prevArticle = document.getElementById("prev-article")
-let nextArticle = document.getElementById("next-article")
+const previousImg = document.getElementById("prev")
+const nextImg = document.getElementById("next")
+const prevArticle = document.getElementById("prev-article")
+const nextArticle = document.getElementById("next-article")
 
 nextImg.addEventListener("click", function(){
     prevArticle.style.display = "none"
